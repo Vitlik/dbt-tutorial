@@ -21,14 +21,14 @@ jobs:
 #      - name: run models
 #        command: dbt run --models my_first_model my_second_model # This example will run two specific models.
 
- - name: every10min
-   schedule: '*/10 * * * *' # The example will run every weekday at 7:30am.
-   steps:
-     - name: run models
-       command: dbt run
+#  - name: every10min
+#    schedule: '*/10 * * * *' # The example will run every weekday at 7:30am.
+#    steps:
+#      - name: run models
+#        command: dbt run
 
- - name: every3min
-   schedule: '*/3 * * * *' # The example will run every 30 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
-   steps:
-     - name: version
-       command: dbt --version
+#  - name: every3min
+#    schedule: '*/3 * * * *' # The example will run every 30 minutes. Note that the cron string is quoted as otherwise it will be treated as invalid alias node (see https://yaml.org/spec/1.2/spec.html#*%20alias// for details)
+#    steps:
+#      - name: version
+#        command: dbt --version
